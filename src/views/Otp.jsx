@@ -11,10 +11,10 @@ function Otp() {
 			</div>
 			<div className="w-[24rem] h-80 bg-secondary rounded-2xl flex flex-col flex-shrink-0 justify-normal items-center gap-10 mt-4">
 				<div className='flex flex-row justify-evenly items-start  gap-4 mt-6 ml-4 mr-4'>
-					<div className="bg-primary rounded-2xl w-[4.5rem] h-[4.5rem]"></div>
-					<div className="bg-primary rounded-2xl w-[4.5rem] h-[4.5rem]"></div>
-					<div className="bg-primary rounded-2xl w-[4.5rem] h-[4.5rem]"></div>
-					<div className="bg-primary rounded-2xl w-[4.5rem] h-[4.5rem]"></div>
+					<input type="tel" className="bg-primary rounded-2xl text-center text-3xl font-semibold w-[4.5rem] h-[4.5rem]"></input>
+					<input type="tel" className="bg-primary rounded-2xl text-center text-3xl font-semibold w-[4.5rem] h-[4.5rem]"></input>
+					<input type="tel" className="bg-primary rounded-2xl text-center text-3xl font-semibold w-[4.5rem] h-[4.5rem]"></input>
+					<input type="tel" className="bg-primary rounded-2xl text-center text-3xl font-semibold w-[4.5rem] h-[4.5rem]"></input>
 				</div>
                 <div>
                     <div className='font-semibold font-family text-xl text-txt'>Didn’t receive OTP yet?</div>
