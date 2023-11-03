@@ -1,6 +1,28 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Emergency() {
+	const navigate = useNavigate();
+	const addEmergencyContactsPath = '/add-emergency-contacts';
+	const welcomePath = '/welcome';
+
+	const [handleAddEmergencyContacts, setHandleAddEmergencyContacts] = useState(() => () => { });
+	const [handleWelcome, setHandleWelcome] = useState(() => () => { });
+
+	useEffect(() => {
+
+		setHandleAddEmergencyContacts(() => () => {
+			// console.log('redirecting to otp page!');
+			navigate(addEmergencyContactsPath);
+		});
+
+		setHandleWelcome(() => () => {
+			// console.log('redirecting to otp page!');
+			navigate(welcomePath);
+		});
+
+	}, [navigate, addEmergencyContactsPath, welcomePath]);
 	return (
 		<div className="flex flex-col justify-center items-center">
 			<div className="text-txt font-semibold text-4xl pt-32 font-family ">
@@ -23,15 +45,15 @@ function Emergency() {
 							</div>
                     </div>
 				</div>
-				<div className="bg-primary text-txt h-4 w-40 pb-10 pt-2 ml-14 text-center font-xl font-semibold shadow-xl  rounded-lg text-xl">
-					<button>
+				<button className="bg-primary text-txt h-4 w-40 pb-10 pt-2 ml-14 text-center font-xl font-semibold shadow-xl  rounded-lg text-xl"
+					onClick={handleAddEmergencyContacts}>
 						Add more
 						<span className="font-extrabold ml-2 text-2xl">+</span>
-					</button>
-				</div>
+				</button>
 			</div>
-			<button className=" bg-[#3A620C] text-white w-56 h-10  pb-10 pt-4 mt-10  font-medium shadow-2xl  rounded-xl text-center text-xl ">
-				<button> Next</button>
+			<button className=" bg-[#3A620C] text-white w-56 h-10  pb-10 pt-4 mt-10  font-medium shadow-2xl  rounded-xl text-center text-xl "
+				onClick={handleWelcome}>
+				Next
 			</button>
 		</div>
 	);
