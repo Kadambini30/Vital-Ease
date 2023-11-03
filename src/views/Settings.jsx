@@ -1,9 +1,11 @@
 import React from 'react';
+import Header1 from '../components/Header1';
 
 function Settings() {
 	return (
 		<div className="flex flex-col justify-center items-center">
-			<div className="text-txt font-semibold text-4xl pt-28 font-family ">
+            <Header1 />
+			<div className="text-txt font-semibold text-4xl pt-12 font-family ">
 				Settings
 			</div>
 			<div className=" w-[22rem] h-[36rem] bg-secondary rounded-2xl mt-8 shadow-xl">

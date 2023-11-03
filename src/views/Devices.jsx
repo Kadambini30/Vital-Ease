@@ -1,10 +1,12 @@
 import React from 'react';
+import Header1 from '../components/Header1';
 
 function Devices() {
 	return (
 		<>
 			<div className="flex flex-col flex-shrink-0 justify-center items-center">
-				<div className="text-txt text-3xl font-semibold font-family mt-28">
+				<Header1 />
+				<div className="text-txt text-3xl font-semibold font-family mt-12">
 					Paired Devices
 				</div>
 				<div className="w-[22.5rem] h-[28rem] bg-secondary rounded-2xl flex flex-col flex-shrink-0 justify-normal items-center gap-10 mt-10 shadow-xl pt-8">

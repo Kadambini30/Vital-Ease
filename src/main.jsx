@@ -21,6 +21,8 @@ import Emergency from './views/Emergency.jsx'
 import AddContact from './views/AddContact.jsx'
 import AddAge from './views/AddAge.jsx'
 import Contact from './views/Contact.jsx'
+import Devices from './views/Devices.jsx'
+import Settings from './views/Settings.jsx'
 
 
 const router = createBrowserRouter([
@@ -80,6 +82,18 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <Contact />,
+  },
+  {
+    path: "stats",
+    element: <Dashboard />,
+  },
+  {
+    path: "paired-devices",
+    element: <Devices />,
+  },
+  {
+    path: "settings",
+    element: <Settings />,
   },
   {
     path: "main",
