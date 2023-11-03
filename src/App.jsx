@@ -12,7 +12,8 @@ import Pills from './views/Pills'
 import Contacts from './views/Contact'
 import Sos from './views/Sos'
 import { useState } from "react";
-import TLogo from './views/text-Logo.png'
+import Test from './views/Test';
+// import TLogo from './views/text-Logo.png'
 import "./App.css";
 /*
 State based Routing
@@ -40,8 +41,9 @@ function App() {
   const [view, setView] = useState("sos");
   return (
     <div className='bg-primary w-screen h-screen'>
-        <div><img className='h-26 w-28 pl-4 pt-4' src={TLogo} alt="" /></div>
-    {viewMap[view]}
+        {/* <div><img className='h-26 w-28 pl-4 pt-4' src={TLogo} alt="" /></div> */}
+    {/* {viewMap[view]} */}
+    <Test />
     </div>
   );
 }
