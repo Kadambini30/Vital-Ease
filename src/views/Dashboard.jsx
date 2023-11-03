@@ -100,7 +100,7 @@ function Dashboard() {
     const navigate = useNavigate();
 
     const addPillPath = '/add-pill';
-    const remoteMonitorPath = '/remote-monitor';
+    const remoteMonitorPath = '/stats';
     const contactPath = '/contact';
     const emergencyPath = '/emergency';
 
