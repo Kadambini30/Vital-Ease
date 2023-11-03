@@ -5,6 +5,9 @@ import Presign from './views/Presign'
 import SignUp from './views/SignUp'
 import SignIn from './views/SignIn'
 import Otp from './views/Otp'
+import Stash from './views/Stash.jsx'
+import Devices from './views/Devices.jsx'
+import Settings from './views/Settings.jsx'
 import ErrorPage from './ErrorPage.jsx'
 import {
   createBrowserRouter,
@@ -46,40 +49,8 @@ const router = createBrowserRouter([
     element: <Otp />,
   },
   {
-    path: "welcome",
-    element: <Welcom />,
-  },
-  {
-    path: "emergency",
-    element: <Sos />,
-  },
-  {
-    path: "add-pill",
-    element: <Pills />,
-  },
-  {
-    path: "name",
-    element: <Name />,
-  },
-  {
-    path: "emergency-contacts-updated",
-    element: <EmergencyContacts1 />,
-  },
-  {
-    path: "emergency-contacts",
-    element: <Emergency />,
-  },
-  {
-    path: "add-emergency-contacts",
-    element: <AddContact />,
-  },
-  {
-    path: "add-age",
-    element: <AddAge />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
+    path: "stash",
+    element: <Stash />,
   },
   {
     path: "main",
@@ -89,6 +60,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <Stash />,
   </React.StrictMode>,
 )
