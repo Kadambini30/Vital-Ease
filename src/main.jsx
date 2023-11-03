@@ -51,12 +51,44 @@ const router = createBrowserRouter([
     element: <Otp />,
   },
   {
-    path: "stash",
-    element: <Stash />,
+    path: "welcome",
+    element: <Welcom />,
+  },
+  {
+    path: "emergency",
+    element: <Sos />,
+  },
+  {
+    path: "add-pill",
+    element: <Pills />,
+  },
+  {
+    path: "name",
+    element: <Name />,
+  },
+  {
+    path: "emergency-contacts-updated",
+    element: <EmergencyContacts1 />,
+  },
+  {
+    path: "emergency-contacts",
+    element: <Emergency />,
+  },
+  {
+    path: "add-emergency-contacts",
+    element: <AddContact />,
+  },
+  {
+    path: "add-age",
+    element: <AddAge />,
+  },
+  {
+    path: "contact",
+    element: <Contact />,
   },
   {
     path: "stats",
-    element: <Dashboard />,
+    element: <Stash />,
   },
   {
     path: "paired-devices",
