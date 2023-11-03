@@ -12,6 +12,15 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Dashboard from './views/Dashboard.jsx'
+import Welcom from './views/Welcom.jsx'
+import Sos from './views/Sos.jsx'
+import Pills from './views/Pills.jsx'
+import Name from './views/Name.jsx'
+import EmergencyContacts1 from './views/EmergencyContacts1.jsx'
+import Emergency from './views/Emergency.jsx'
+import AddContact from './views/AddContact.jsx'
+import AddAge from './views/AddAge.jsx'
+import Contact from './views/Contact.jsx'
 
 
 const router = createBrowserRouter([
@@ -35,6 +44,42 @@ const router = createBrowserRouter([
   {
     path: "otp",
     element: <Otp />,
+  },
+  {
+    path: "welcome",
+    element: <Welcom />,
+  },
+  {
+    path: "emergency",
+    element: <Sos />,
+  },
+  {
+    path: "add-pill",
+    element: <Pills />,
+  },
+  {
+    path: "name",
+    element: <Name />,
+  },
+  {
+    path: "emergency-contacts-updated",
+    element: <EmergencyContacts1 />,
+  },
+  {
+    path: "emergency-contacts",
+    element: <Emergency />,
+  },
+  {
+    path: "add-emergency-contacts",
+    element: <AddContact />,
+  },
+  {
+    path: "add-age",
+    element: <AddAge />,
+  },
+  {
+    path: "contact",
+    element: <Contact />,
   },
   {
     path: "main",
