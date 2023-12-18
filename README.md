@@ -46,29 +46,6 @@ Vital Ease attempts to solve this problem by providing a simple, easy-to-use web
 
 * Allow caregivers to remotely monitor the health vitals of the elderly.
 
-## Design Process
-
-### Discover
-
-* Secondary Research
-* Primary Research
-
-### Define
-
-* Primary Research
-* User Persona
-
-### Ideate
-
-* Journey Map
-* User Flow
-
-### Design
-
-* Low Fidelity Wireframes
-* High Fidelity Wireframes
-* Figma Design + Prototyping
-
 ## Links
 
 * [User Interview Notes](https://docs.google.com/document/d/1wHhd4eff2fMpHGzTY11gyzBJ_PEju29U/edit?usp=sharing&ouid=106758123571067630847&rtpof=true&sd=true)
